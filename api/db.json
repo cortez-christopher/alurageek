@@ -1,0 +1,100 @@
+{
+  "productos": [
+    {
+      "nombre": "Producto 1",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "fragancias",
+      "precio": 180,
+      "imagen": "https://i.postimg.cc/zvqzG07M/producto1.png",
+      "id": 1
+    },
+    {
+      "nombre": "Producto 2",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "maquillaje",
+      "precio": 39,
+      "imagen": "https://i.postimg.cc/3JJrMfd0/producto2.png",
+      "id": 2
+    },
+    {
+      "nombre": "Producto 3",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "cuidado del cabello",
+      "precio": 122,
+      "imagen": "https://i.postimg.cc/yYQ17hZQ/producto3.png",
+      "id": 3
+    },
+    {
+      "nombre": "Producto 4",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "cuidado del cabello",
+      "precio": 42,
+      "imagen": "https://i.postimg.cc/VNMm93Hp/producto4.png",
+      "id": 4
+    },
+    {
+      "nombre": "Producto 5",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "maquillaje",
+      "precio": 89,
+      "imagen": "https://i.postimg.cc/vBtyk5yv/producto5.png",
+      "id": 5
+    },
+    {
+      "nombre": "Producto 6",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "maquillaje",
+      "precio": 30,
+      "imagen": "https://i.postimg.cc/zvDNr3XY/producto6.png",
+      "id": 6
+    },
+    {
+      "nombre": "Producto 7",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "maquillaje",
+      "precio": 60,
+      "imagen": "https://i.postimg.cc/2jTmxd2k/producto7.png",
+      "id": 7
+    },
+    {
+      "nombre": "Producto 8",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "maquillaje",
+      "precio": 45,
+      "imagen": "https://i.postimg.cc/FsB4M9Mw/producto8.png",
+      "id": 8
+    },
+    {
+      "nombre": "Producto 9",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "maquillaje",
+      "precio": 25,
+      "imagen": "https://i.postimg.cc/YCLHk5k0/producto9.png",
+      "id": 9
+    },
+    {
+      "nombre": "Producto 10",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "bano y cuerpo",
+      "precio": 28,
+      "imagen": "https://i.postimg.cc/G2dwF9DT/producto10.png",
+      "id": 10
+    },
+    {
+      "nombre": "Producto 11",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "fragancias",
+      "precio": 220,
+      "imagen": "https://i.postimg.cc/vT2JwzN5/producto11.png",
+      "id": 11
+    },
+    {
+      "nombre": "Producto 12",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ipsam!",
+      "categoria": "maquillaje",
+      "precio": 49,
+      "imagen": "https://i.postimg.cc/3JdMCsk1/producto12.png",
+      "id": 12
+    }
+  ]
+}

@@ -1,0 +1,625 @@
+
+:root {
+  --color-concreto: #f3f3f3;
+  --color-corriente-del-golfo: #87bcb4;
+  --color-negro: #010101;
+  --color-emperador: #4f4f4f;
+  --color-roble-secreto: #b07c5b;
+  --color-camafeo: #dcbca6;
+  --color-mandy-rosa: #e4c1b1;
+  --color-carmesi: #e5181c;
+  --color-blanco: #ffffff;
+}
+
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--color-concreto);
+}
+/* Seccion de header */
+
+header {
+  width: 100%;
+  height: 94px;
+  position: fixed;
+  z-index: 10;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 94px;
+  padding: 35px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-negro);
+  letter-spacing: 10px;
+}
+
+.nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.enlaces-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.enlaces-nav li {
+  margin: 0 15px;
+}
+
+.enlaces-nav a {
+  text-decoration: none;
+  color: var(--color-concreto);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.iconos {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.iconos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .3s ease-in-out;
+}
+
+.iconos a:hover {
+  transform: scale(1.2);
+}
+
+.iconos a i {
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--color-negro);
+  transition: transform .3s ease-in-out;
+}
+
+.iconos a:hover i {
+  transform: scale(1.2);
+}
+
+section {
+  background-image: url(../img/header.png);
+  background-repeat: repeat;
+  background-size: auto 350px;
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.titulo-encabezado {
+  position: absolute;
+  height: 162px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--color-concreto);
+}
+
+.titulo-encabezado h1 {
+  margin: 54px 0;
+  font-size: 54px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.migas-de-pan {
+  position: absolute;
+  bottom:5%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  height: 94px;
+  width: 100%;
+}
+
+.migas-de-pan p {
+  margin: 42px 0 40px;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: var(--color-concreto);
+}
+
+/* Estilos encabezado con scroll */
+
+header.scroll {
+  background-color: var(--color-blanco);
+  height: 94px;
+  background-image: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+header.scroll .enlaces-nav a {
+  color: var(--color-negro);
+} 
+
+
+/* Seccion filtro - agregar */
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0; 
+  background-color: var(--color-concreto); 
+  box-sizing: border-box; 
+  
+}
+
+.mostrar-resultados {
+  flex: 1; 
+}
+
+.mostrar-resultados p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-emperador);
+  text-transform: uppercase;
+}
+
+.filtrar-agregar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative; /* Cambios */
+}
+
+.filtrar {
+  position: relative;
+  margin-right: 20px; 
+  /* width: 260px; */
+}
+
+.filtrar p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-negro);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.filtrar p i {
+  margin-left: 5px;
+}
+
+/* ****** */
+.filtro-opciones {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-emperador);
+  width: 260px;
+  margin-top: 5px;
+  z-index: 1;
+}
+
+.filtro-opciones p {
+  margin: 0;
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.filtro-opciones p:hover {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+}
+
+/* Seccion boton agregar y formulario */
+
+.agregar button {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: var(--color-negro);
+  background-color: var(--color-concreto);
+  border: 1px solid var(--color-emperador);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 0; 
+  margin-left: 20px;
+}
+
+.agregar button i {
+  margin-left: 5px;
+}
+
+
+.agregar button:hover {
+  background-color: var(--color-negro);
+  color: var(--color-concreto);
+}
+
+.agregar-producto {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 310px;
+  height: 100%;
+  background-color: var(--color-blanco);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.agregar-producto.active {
+  display: block;
+}
+
+.cerrar-ventana {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Formulario */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.formulario h2 {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px; /* A oberservar */
+}
+
+.formulario label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-negro);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  
+}
+
+
+/* Observar esta parte */
+.formulario select {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-negro);
+  cursor: pointer;
+  letter-spacing: 2px;
+  
+}
+
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+  width: 100%;
+  padding: 10px; /* a observar */
+  margin-bottom: 20px;
+  border: 1px solid var(--color-emperador);/* A observar */
+  box-sizing: border-box;
+  height: 40px;
+  background-color: var(--color-blanco);
+}
+
+.formulario textarea {
+  resize: none;
+  white-space: normal;
+  overflow: auto;
+  white-space: nowrap;
+  resize: none;
+}
+
+.formulario textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;/* A observar */
+}
+
+.botones button {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid var(--color-emperador);
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px 0 0;
+}
+
+.botones button {
+  background-color: var(--color-blanco);
+  color: var(--color-negro)
+}
+
+.botones button:hover {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+}
+
+/* .botones button[type="submit"] {
+  background-color: var(--color-blanco);
+  color: var(--color-negro)
+}
+
+.botones button[type="reset"] {
+  background-color: var(--color-blanco);
+  color: var(--color-negro)
+} */
+
+
+/* Seccion de productos */
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background: var(--color-concreto);
+  margin-bottom: 68px;
+}
+
+
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.producto {
+  width: 260px;
+  height: 515px;
+  background-color: var(--color-blanco);
+  /* border: 1px solid #ddd; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  position: relative;
+  /* margin-top: 10px; */
+  /* margin-bottom: 40px;  */
+}
+
+.producto .opciones {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 19px;
+  color: var(--color-emperador);
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.producto:hover .opciones {
+  display: block;
+}
+
+.producto img {
+  width: 260px;
+  height: 230px;
+  object-fit: cover;
+  border: none;
+  border: 1px solid var(--color-concreto);
+}
+
+
+.detalles {
+  width: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.detalles h2 {
+  font-size: 20px;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px 0;
+  color: var(--color-negro);
+  transition: color .3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.producto:hover .detalles h2 {
+  color: var(--color-mandy-rosa);
+}
+
+.detalles {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--color-emperador);
+}
+
+
+
+.precio {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--color-negro);
+  margin-top: auto;
+}
+
+/* Menu de opciones producto */
+
+.menu-opciones {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  background: var(--color-blanco);
+  border: 1px solid var(--color-concreto);
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  
+}
+
+.menu-opciones .opcion {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.menu-opciones .opcion i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.menu-opciones .opcion:hover {
+  background: var(--color-negro);
+  color: var(--color-blanco);
+}
+
+.producto:hover .opciones {
+  display: block;
+}
+
+.producto .opciones.activo + .menu-opciones {
+  display: flex;
+}
+
+/* Seccion Footer */
+
+footer {
+  height: 385px;
+  background-image: url(../img/footer.png);
+  background-repeat: repeat;
+  background-size: auto 335px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-concreto);
+  text-align: center;
+
+}
+
+.footer-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-concreto);
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-iconos {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-iconos a {
+  color: var(--color-mandy-rosa);
+  font-size: 20px;
+  transition: color 0.3s;
+  text-decoration: none;
+  transition: transform .3s ease-in-out;
+}
+
+.footer-iconos a:hover {
+  color: var(--color-concreto);
+  transform: scale(1.2);
+}
+
+.footer-iconos a i {
+  transition: transform .3s ease-in-out;
+}
+
+.footer-iconos a:hover i {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-emperador);
+}
+
+
+
+
